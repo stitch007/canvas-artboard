@@ -1,0 +1,65 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+
+#canvas {
+  position: absolute;
+  cursor: url('./svg/pencil.svg'), auto;
+  background-color: #f1f2f6;
+}
+
+#canvas.eraser {
+  cursor: url('./svg/eraser.svg'), auto;
+}
+
+.toolbar {
+  position: fixed;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  background-color: white;
+  padding: 12px;
+  border-radius: 999px;
+}
+
+.toolbar > * {
+  width: 36px;
+  height: 36px;
+  margin: 0 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.toolbar svg {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin: auto;
+  color: #34495e;
+}
+
+.range {
+  width: 64px;
+}
+
+.range > input {
+  width: 64px;
+}
+
+.color {
+  border-radius: 999px;
+}
+
+.color > input {
+  width: 100%;
+  height: 100%;
+}
+
